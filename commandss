@@ -49,7 +49,6 @@ Docker => creates image from the files from jfrog
 K8S =>
         creates images to containers to pods
         3 layers =>app => container > pods
-
 SRE => monitor applications
         splunk grafana prometheus
 ======

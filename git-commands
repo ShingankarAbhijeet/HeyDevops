@@ -12,3 +12,11 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 solution => git push -f origin main
 
 
+#########3
+! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ShingankarAbhijeet/HeyDevops.git'
+
+=>>     git fetch
+        git rebase origin/main
+        git rebase origin/main
+        
