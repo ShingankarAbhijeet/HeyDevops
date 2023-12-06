@@ -1,4 +1,6 @@
-error
+
+
+=> error
 {
 ! [rejected]        main -> main (non-fast-forward)
 error: failed to push some refs to 'https://github.com/ShingankarAbhijeet/HeyDevops.git'
@@ -8,3 +10,5 @@ hint: 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 } 
 solution => git push -f origin main
+
+

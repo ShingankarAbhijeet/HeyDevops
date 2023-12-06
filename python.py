@@ -1,24 +1,8 @@
-# replace x in 1.28.x-* with the latest patch version
-apt-mark unhold kubeadm kubelet kubectl && \
-apt-get update && apt-get install -y kubeadm=1.26.9-00 kubelet=1.26.9-00 kubectl=1.26.9-00 && \
-apt-mark hold kubeadm kubelet kubectl
-
 '''
-apt-mark unhold kubeadm kubectl kubelet && \
-apt-get update && apt-get install -y kubeadm=1.25.14-00 kubelet=1.25.14-00 kubectl=1.25.14-00 && \
-apt-mark hold kubeadm kubectl kubelet
-
- apt-mark unhold kubeadm kubectl kubelet && apt-get update && apt-get install -y kubeadm=1.25.14-00 kubelet=1.25.14-00 kubectl=1.25.14-00 && apt-mark hold kubeadm kubectl kubelet
- 2052  k drain master --ignore-daemonsets --delete-emptydir-data
- 2053  kubeadm upgrade plan
- 2054* kubeadm vers
- 2055  kubeadm upgrade apply v1.25.16
- 2056  kubeadm upgrade apply v1.25.14
- 2057  sudo systemctl daemon-reload
- 2058  sudo systemctl restart kubelet
- 2059  k uncordon master
-
-
+x,y,z=1,2,3
+print (x, y)
+for i in range(10):
+    print(i)
 
 x=8
 print(type(x))
