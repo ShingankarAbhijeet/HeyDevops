@@ -33,3 +33,5 @@ def lambda_handler(event,context):
        start_stop_ec2_instances(instance_ids, 'start')
     if should_stop_instances():
        start_stop_ec2_instances(instance_ids, 'stop')
+
+       
